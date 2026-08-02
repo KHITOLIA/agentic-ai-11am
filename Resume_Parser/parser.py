@@ -21,3 +21,15 @@ def prompt_template():
         input_variables = ['resume'],
         partial_variables = {"format_instruction" : parser.get_format_instructions()})
     return template, parser
+
+#  product name
+#  reviewer name
+#  date of submission
+#  pros
+#  cons
+#  summary
+#  sentiment
+#  rating
+
+# if sentiment is not good:
+    # then mail the review back to the customer care(tushar@trainingbasekt.co)
