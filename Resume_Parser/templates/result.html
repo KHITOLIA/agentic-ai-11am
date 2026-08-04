@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Result</title>
+
+</head>
+
+<body>
+
+<h1>{{ resume.name }}</h1>
+
+<p><b>Email:</b> {{ resume.email }}</p>
+
+<p><b>Phone:</b> {{ resume.phone }}</p>
+
+<h3>Skills</h3>
+
+<ul>
+
+{% for skill in resume.skills %}
+
+<li>{{ skill }}</li>
+
+{% endfor %}
+
+</ul>
+
+<h3>Projects</h3>
+
+<ul>
+
+{% for project in resume.projects %}
+
+<li>{{ project }}</li>
+
+{% endfor %}
+
+</ul>
+
+<h3>Experience</h3>
+
+<ul>
+
+{% for exp in resume.experience %}
+
+<li>{{ exp }}</li>
+
+{% endfor %}
+
+</ul>
+
+</body>
+<a href="/">Parse Again</a>
+</html>
