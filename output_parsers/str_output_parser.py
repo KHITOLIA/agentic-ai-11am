@@ -30,6 +30,7 @@ template_2 = PromptTemplate(
 )
 
 chain = template_1 | model | parser | template_2 | model | parser
+print(chain.get_graph().print_ascii())
 
 result = chain.invoke({"topic" : input("Enter the topic")})
 print(result)
