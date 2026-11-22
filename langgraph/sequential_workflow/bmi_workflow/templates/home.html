@@ -1,0 +1,12 @@
+<form action="post">
+    Weight : 
+    <input type="number" name = "weight_kg" required placeholder="Enter your weight here : ">
+    Height : 
+    <input type="number" name = "height_m" required placeholder="Enter your height here : ">
+
+    Find : 
+    <button type="submit"></button> 
+    {% if final_state %}
+    {{final_state}}
+    {% endif %}
+</form>
